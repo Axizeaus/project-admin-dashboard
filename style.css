@@ -26,6 +26,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -20px;
 }
 
 .align1 {
@@ -70,3 +71,43 @@ header{
     justify-self: flex-end;
 }
 
+.handler > img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    grid-row: 1 / -1;
+    padding: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.handler{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.handler > div{
+    text-align: center;
+    justify-self: left;
+}
+
+.quote{
+    align-self: flex-end;
+}
+
+.buttons {
+    margin-right: 100px;
+}
+
+.buttons > button{
+    border-radius: 10px;
+    background-color: aquamarine;
+    width: 100px;
+    margin-right: 20px;
+}
