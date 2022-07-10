@@ -4,22 +4,44 @@ body{
     grid-template-rows: 1fr 5fr;
     background-color: aliceblue;
     box-sizing: border-box;
+    font-size: x-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
     grid-column: 2;
-    background-color: bisque;
+    background-color: #1D4ED8;
 }
 
 .sidebar{
     grid-row: 1/-1;
-    background-color: crimson;
+    background-color: #3B82F6;
 }
  
 
 .main-content{
-    background-color: aqua;
+    background-color: #60A5FA;
     grid-column: 2 / 3 ;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.projects {
+    grid-column: 1;
+    background-color: #60A5FA;
+
+    display: grid;
+    overflow: auto;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.projects > div{
+    margin: 12px;
+    padding: 25px;
+    border: 1px solid black;
+    background-color: cornsilk;
+    border-radius: 20%;
 }
 
 .searchbar{
@@ -49,7 +71,6 @@ header{
     border-radius: 50%;
     height: 75px;
     width: 75px;
-    margin-right: 25px;
     padding: 20px;
 }
 
@@ -58,12 +79,13 @@ header{
 }
 
 .profilename{
-    margin-right: 25px;
+    margin-right: 125px;
 }
 
 #search-bar{
     border-radius: 50px;
     min-width: 400px;
+    min-height: 20px;
     margin-left: 15px;
 }
 
@@ -75,7 +97,7 @@ header{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    margin-left: 100px;
+    margin-left: 50px;
     grid-row: 1 / -1;
     padding: 10px;
 }
@@ -107,9 +129,15 @@ header{
 
 .buttons > button{
     border-radius: 10px;
-    background-color: aquamarine;
-    width: 100px;
+    background-color: #059669;
+    width: 150px;
+    height: 50px;
     margin-right: 20px;
+    font-size: x-large;
+}
+
+.buttons > button:hover{
+    opacity: 0.8;
 }
 
 .sidebar{
@@ -125,7 +153,6 @@ li {
 a {
     text-decoration: none;
     color: aliceblue;
-    font-size: x-large;
 }
 
 a:hover{
